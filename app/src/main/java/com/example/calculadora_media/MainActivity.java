@@ -1,6 +1,9 @@
 package com.example.calculadora_media;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +11,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    private LinearLayout layoutPrincipal;
+    private Button btnAdicionar;
+    private Button btnCalcular;
+    private List<EditText> listaDeCampos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
